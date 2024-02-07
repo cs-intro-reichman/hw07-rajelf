@@ -29,7 +29,7 @@ public class HashTagTokenizer {
 	public static boolean existInDictionary(String word, String[] dictionary) {
 		int length = dictionary.length;
 		for (int i = 0; i < length; i++) {
-			if (word == dictionary[i]) {
+			if (word.equals(dictionary[i])){
 				return true;
 			}
 		}
